@@ -1,11 +1,13 @@
-import json
 import talib as ta
 import pandas as pd
 import matplotlib.pyplot as plt
-import csv
+import json
 import os
 
-with open('datas/dataBinance_2019-now_5m_unformated.json') as json_file:
+inputFile = input("Enter the relative path of the json file with the filename and extension (ex: datas/input.json) :")
+outputFile = input("Enter the relative path of the output file with the filename and extension (ex: datas/output.csv) :")
+
+with open(inputFile) as json_file:
     data = json.load(json_file)
 
 pastRoundList = []
@@ -48,5 +50,4 @@ df["SMA100"] = ta.SMA(df["Close"], timeperiod=100)
 df["SMA200"] = ta.SMA(df["Close"], timeperiod=200)
 
 # export df to csv file
-df.to_csv('datas/dataBinance_2019-now_5m.csv', index=False)
-
+df.to_csv(outputFile, index=False)
