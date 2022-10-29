@@ -54,3 +54,4 @@ df["SMA200"] = ta.SMA(df["Close"], timeperiod=200)
 
 # export df to csv file
 df.to_csv(outputFile, index=False)
+print("Finished")
