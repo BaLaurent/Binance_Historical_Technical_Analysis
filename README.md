@@ -2,7 +2,7 @@
 Retrieve historical datas from binance then associate indicators using TA-lib
 
 # Buy me a coffee
-if you find this script usefull you can [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/octopusman388)
+if you find this script usefull you can <a href="https://www.buymeacoffee.com/octopusman388"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=octopusman388&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a>
 
 # Usage :
 First run getDatasFromBinance.py then run taFromBinanceDatas.py
